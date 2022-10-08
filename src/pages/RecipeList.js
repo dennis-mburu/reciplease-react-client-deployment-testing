@@ -8,7 +8,7 @@ function RecipeList() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("/recipes")
+    fetch("https://sheltered-bayou-11925.herokuapp.com/recipes")
       .then((r) => r.json())
       .then(setRecipes);
   }, []);

@@ -14,7 +14,7 @@ function SignUpForm({ onLogin }) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/signup", {
+    fetch("https://sheltered-bayou-11925.herokuapp.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

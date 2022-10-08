@@ -10,7 +10,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("/me").then((r) => {
+    fetch("https://sheltered-bayou-11925.herokuapp.com/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
